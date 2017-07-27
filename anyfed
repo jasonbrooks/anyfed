@@ -144,7 +144,7 @@ else
     echo "Setting up script for proot..."
 
     if [ "$ARCH" = "x86_64" ]; then
-        PROOT_MIRROR="https://github.com/proot-me/proot-static-build/releases/download/v5.1.1/proot_5.1.1_x86_64_rc2"
+        PROOT_MIRROR="https://github.com/proot-me/proot-static-build/releases/download/v5.1.1/proot_5.1.1_x86_64_rc2--no-seccomp"
         PROOTPATH="$ANYFEDPATH/proot"
         wget "$PROOT_MIRROR" -O "$ANYFEDPATH/proot" 
         chmod +x "$ANYFEDPATH/proot"
